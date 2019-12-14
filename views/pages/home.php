@@ -1,22 +1,31 @@
-<nav class="navbar navbar-expand-sm" style="background: lightblue">
-    <a href="#" class="navbar-brand">
-        <img src="https://lh3.googleusercontent.com/-pognNf-lmmg/XenEx6KniKI/AAAAAAAAA0A/uExe49DRD6sPkaKOuAMi4fmYAFZ-Uo-GgCK8BGAsYHg/s400/logo-major2.png" alt="" style="width:30px">
-    </a>
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a href="index.php?action=home" class="nav-link text-dark ml-3">Home</a>
-        </li>
-        <li class="nav-item">
-            <a href="index.php?action=major" class="nav-link text-dark ml-3">Major</a>
-        </li>
-    </ul>
-</nav>
+<?php
+    include_once "include/header.php";
+?>
 <div class="container">
     <div class="row">
-        <div class="col-6"></div>
-        <div class="col-6"></div>
+        <div class="col-6">
+            <div class="card shadow-lg mt-5">
+                <div class="card-header text-center text-info">
+                    <h4>Choose Major</h3>
+                </div>
+                <div class="card-body mt-2">
+                    <p><br>
+                        គោលបំណងនៃការបង្កើតគេហទំព័រនេះគឺដើម្បីជួយសម្រួលការងារលោកគ្រូ អ្នកគ្រួក្នុងការរៀបចំសិស្សដែលរៀនឆ្នាំទី១ទាំងអស់អោយពួកគាត់ជ្រើសរើសជំនាញដែលគាត់ចូលចិត្តនិងស្រលាញ់ដើម្បីធ្វើការសិក្សាបន្តនៅឆ្នាំទី២
+                        និងម្យ៉ាងទៀតពេលទទួលបានទិន្នន័យរបស់សិស្សហើយវារក្សាទុកនិងគ្រប់គ្រងនូវទិន្នន័យរបស់សិស្សទាំងអស់។​​ ដើម្បីធ្វើបានបែបនេះយើងត្រូវតែធ្វើការរើសជំនាញរវាង​ WEP និង SNA​ ដើម្បី​ Register វាក្នុងការរៀនជំនាញ
+                        មួយនោះ។
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card shadow-lg mt-5">
+                <div class="card-body">
+                    <img src="views/bootstrap/img/choose_major1.jpg" class="img-fluid ml-5" style="height: 277px">    
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-<div class="footer">
-    <div></div>
-</div>
+<?php
+    include_once "include/footer.php";
+?>
