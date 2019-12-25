@@ -12,23 +12,23 @@
     
     function view(&$data) {
         $data['view'] = m_view();
-        $data['page'] = "test/view.php";
+        $data['page'] = "test/view";
 
     }
     function home(&$data) {
         $data['home'] = m_home();
-        $data['page'] = "pages/home.php";
+        $data['page'] = "pages/home";
     }
     function major(&$data) {
         $data['major'] = m_major();
-        $data['page'] = "pages/major.php";
+        $data['page'] = "pages/major";
     }
-    function sna(&$data) {
-        $data['sna'] = m_sna();
-        $data['page'] = "pages/sna.php";
-    }
-    function web(&$data) {
-        $data['web'] = m_web();
-        $data['page'] = "pages/web.php";
-    }
+    // function sna(&$data) {
+    //     $data['sna'] = m_sna();
+    //     $data['page'] = "pages/sna";
+    // }
+    // function web(&$data) {
+    //     $data['web'] = m_web();
+    //     $data['page'] = "pages/web";
+    // }
 ?>
