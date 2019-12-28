@@ -24,12 +24,12 @@
     function m_major() {
         
     }
-    function m_sna() {
+    // function m_sna() {
         
-    }
-    function m_web() {
+    // }
+    // function m_web() {
         
-    }
+    // }
 
     
 ?>

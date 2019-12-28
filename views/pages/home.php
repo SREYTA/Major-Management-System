@@ -1,6 +1,6 @@
 <div id="navbar-top">
     <img src="https://lh3.googleusercontent.com/-cXa1MHlPBUo/Xf9WDfsLPHI/AAAAAAAAAnE/mUON6W85gwIFLkjxejuWvuIZviAqfzIBwCK8BGAsYHg/s300/logo-major.jpg" class="img-fluid" alt="" style="width: 188px; height:61px;">
-    <a href=""><i class="fa fa-user text-light meun-text" style="margin-left:83%"></i></b></a>
+    <a href="index.php?action=home"><i class="fa fa-user text-light meun-text" style="margin-left:83%"></i></b></a>
 </div>
 <div class="handle"></div>
 <div id="wrapper">
@@ -20,13 +20,13 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-1"></div>
-        <div class="col-7 mt-5">
-            <div class="card shadow-lg mt-5">
+        <div class="col-md-2"></div>
+        <div class="col-md-5 mt-5">
+            <div class="card shadow-lg mt-5" style="height:375px" >
                 <div class="card-header text-center text-info">
                     <h4>Choose Major</h3>
                 </div>
-                <div class="card-body mt-2">
+                <div class="card-body">
                     <p><br>
                         គោលបំណងនៃការបង្កើតគេហទំព័រនេះគឺដើម្បីជួយសម្រួលការងារលោកគ្រូ អ្នកគ្រួក្នុងការរៀបចំសិស្សដែលរៀនឆ្នាំទី១ទាំងអស់អោយពួកគាត់ជ្រើសរើសជំនាញដែលគាត់ចូលចិត្តនិងស្រលាញ់ដើម្បីធ្វើការសិក្សាបន្តនៅឆ្នាំទី២
                         និងម្យ៉ាងទៀតពេលទទួលបានទិន្នន័យរបស់សិស្សហើយវារក្សាទុកនិងគ្រប់គ្រងនូវទិន្នន័យរបស់សិស្សទាំងអស់។​​ ដើម្បីធ្វើបានបែបនេះយើងត្រូវតែធ្វើការរើសជំនាញរវាង​ WEP និង SNA​ ដើម្បី​ Register វាក្នុងការរៀនជំនាញ
@@ -35,10 +35,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-4 mt-5">
-            <div class="card shadow-lg mt-5">
+        <div class="col-md-5 mt-5">
+            <div class="card shadow-lg mt-5" style="height:375px">
                 <div class="card-body text-center">
-                    <img src="https://lh3.googleusercontent.com/-xqmMrDDdbXE/Xf9eNHXt_5I/AAAAAAAAAbs/bZbzPCrYH10MqSmXK9L5BXFFfs49mc_swCK8BGAsYHg/s512/choose_major1.jpg" class="img-fluid ml-5" style="height: 252px">
+                    <img src="https://marketsgazette.com/wp-content/uploads/2019/10/Blockchain-Technology-Market.jpg" class="img-fluid" style="height: 330px">
                 </div>
             </div>
         </div>

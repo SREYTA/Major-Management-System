@@ -23,15 +23,15 @@
         <div class="col-md-2"></div>
         <div class="col-md-10" style="margin-top: 100px">
             <a href="#" class="btn btn-success" data-toggle="modal" data-target="#myModal">Add New</a>
-            <!-- index.php?action=add -->
+            <!-- index2.php?action=add -->
             <!-- The Modal of Add-->
             <div class="modal" id="myModal">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <form action="index1.php?action=form_data" method="post" enctype="multipart/form-data">
+                        <form action="index2.php?action=form_data" method="post" enctype="multipart/form-data">
                             <!-- Modal Header -->
                             <div class="modal-header">
-                                <h2 class="text-success font-weight-bold text-center">SNA Register</h2>
+                                <h2 class="text-center text-success font-weight-bold">WEB Register</h2>
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
                             <!-- Modal body -->
@@ -69,7 +69,7 @@
                                 <div class="form-group">
                                     <label for="class">Major:</label>
                                     <select name="major" id="major" class="form-control">
-                                        <option value="SNA">SNA</option>
+                                        <option value="web">web</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -79,8 +79,8 @@
                             </div>
                             <!-- Modal footer -->
                             <div class="modal-footer">
-                                <a href="index1.php?action=view" class="btn btn-outline-danger" style="margin-right: 302px;">Go Back</a>
-                                <input type="submit" name="create" value="Submit" class="btn btn-outline-primary float-right">
+                                <a href="index2.php?action=view" class="btn btn-outline-danger float-right" style="margin-right: 302px;">Go Back</a>
+                                <input type="submit" name="create" value="Submit" class="btn btn-outline-primary">
                             </div>
                         </form>
                     </div>
@@ -91,8 +91,8 @@
     <!-- The End Modal of Add-->
 
     <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-10">
+        <div class="col-2"></div>
+        <div class="col-10">
         
             <!-- View data of student in table -->
             <table class="table table-bordered " style="color: white;">
@@ -122,22 +122,24 @@
                         <td><?php echo $rows ['email']?></td>
                         <td><?php echo $rows ['major']?></td>
                         <td><?php echo $rows ['reason']?></td>
+                        
+                        
                         <td>               
-                            <a href="index1.php?action=detail&id=<?php echo $rows['id'];?>" ><i class="material-icons text-success">remove_red_eye</i></a>  
-                            <a href="index1.php?action=edit&id=<?php echo $rows['id'];?>"><i class="material-icons text-primary">edit</i></a>
-                            <a href="index1.php?action=delete&id=<?php echo $rows['id'];?>"><i class="material-icons text-danger" onclick="return confirm('Are you sure you want to delete?');">delete</i></a>
+                            <a href="index2.php?action=detail&id=<?php echo $rows['id'];?>" ><i class="material-icons text-success">remove_red_eye</i></a>  
+                            <a href="index2.php?action=edit&id=<?php echo $rows['id'];?>"><i class="material-icons text-primary">edit</i></a>
+                            <a href="index2.php?action=delete&id=<?php echo $rows['id'];?>"><i class="material-icons text-danger" onclick="return confirm('Are you sure you want to delete?');">delete</i></a>
                         </td>
                     </tr>
                 </tbody>
                 <?php
-                    $id++;
+                        $id++;
                         }
                     }
                 ?>
             </table>
         </div>
     </div>
-    <!--The end View data of student in table -->
+    <!--The End View data of student in table -->
 </div>
 <script src="js/code.js"></script>
 </body>

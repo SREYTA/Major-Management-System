@@ -69,7 +69,6 @@
         $result = mysqli_query($conn, $query);
         return $result;
     
-    
     }
 
     function m_delete() {

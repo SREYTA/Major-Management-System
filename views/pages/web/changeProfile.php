@@ -9,7 +9,7 @@
                 <?php
                         foreach($data['student'] as $row){
                 ?>
-                    <form action="index1.php?action=change_profile&id=<?php echo $row['id']; ?>" method="post" enctype="multipart/form-data">
+                    <form action="index2.php?action=change_profile&id=<?php echo $row['id']; ?>" method="post" enctype="multipart/form-data">
                         <div class="card-body">
                             <div class="form-group">
                                 <label for="file">Profile Picture:</label><br>
@@ -17,7 +17,7 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <a href="index1.php?action=view" class="btn btn-outline-success">Go Back</a>
+                            <a href="index2.php?action=view" class="btn btn-outline-success">Go Back</a>
                             <input type="submit" name="create" value="Submit" class="btn btn-outline-primary float-right">
                         </div>
                     </form>

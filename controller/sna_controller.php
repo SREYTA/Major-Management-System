@@ -18,7 +18,7 @@ function view(&$data){
 
     
 function add(&$data) {
-    $data['page'] = "pages/sna/add";
+    $data['page'] = "pages/sna/view";
 }
 function form_data(&$data){
     $add = add_data($_POST);
