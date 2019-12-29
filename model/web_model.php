@@ -23,7 +23,7 @@
         $major = $_POST['major'];
         $filename = $_FILES['profile']['name'];
         $fileLocation = $_FILES['profile']['tmp_name'];
-        move_uploaded_file($fileLocation, "View/img/".$filename);
+        move_uploaded_file($fileLocation, "views/mg/".$filename);
     
         $query = "INSERT INTO tbl_web(first_name ,last_name, gender, class, email, major, reason, profile)
                   VALUES('$firstname', '$lastname', '$sex', '$class', '$email','$major','$reason', '$filename')";
@@ -62,13 +62,12 @@
         $id = $_GET['id'];
         $filename = $_FILES['profile']['name'];
         $fileLocation = $_FILES['profile']['tmp_name'];
-        move_uploaded_file($fileLocation, "View/img/".$filename);
+        move_uploaded_file($fileLocation, "views/img/".$filename);
     
         $query = "UPDATE tbl_web SET profile = '$filename' WHERE id='$id'";
     
         $result = mysqli_query($conn, $query);
         return $result;
-    
     
     }
 

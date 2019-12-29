@@ -10,11 +10,11 @@
         $function($data);
     }
 
-    function view(&$data){
-        $data['student_data'] = get_data();
-        // $dat['student_detail'] = m_detail();
-        $data['page'] = "pages/web/view";
-    }
+function view(&$data){
+    $data['student_data'] = get_data();
+    // $dat['student_detail'] = m_detail();
+    $data['page'] = "pages/web/view";
+}
 
     
 function add(&$data) {
@@ -27,7 +27,7 @@ function form_data(&$data){
     } else { 
         $action = "add";
     }
-    header("Location:index22.php?action=$action");
+    header("Location:index2.php?action=$action");
 }
 
 function detail(&$data) {

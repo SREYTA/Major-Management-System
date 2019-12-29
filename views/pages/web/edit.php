@@ -7,7 +7,7 @@
                     <h2>Student Information Form</h2>
                 </div>
                 <?php
-                foreach ($data['student_data'] as $row) {
+                    foreach ($data['student_data'] as $row) {
                 ?>
                 <form action="index2.php?action=edit_data&id=<?php echo $row['id'];?>" method="post" enctype="multipart/form-data">
                     <div class="card-body"  style="background-color: #C0C0C0;">
@@ -19,6 +19,13 @@
                                 <label for="lastnmae">Lastnmae</label>
                                 <input type="text" name="lastname" id="lastname" value="<?php echo $row['last_name']; ?>" class="form-control">
                             </div>
+                            
+                            <div class="form-group">
+                                <label for="gender">Gender:</label><br>
+                                <input type="radio" <?php if($row['gender']=='Male'){?> checked="checked" <?php } ?> name="sex" value="Male">Male <br>
+                                <input type="radio" <?php if($row['gender']=='Female'){?> checked="checked" <?php } ?> name="sex" value="Female">Female
+                            </div>
+
                             <div class="form-group">
                                 <label for="class">Class:</label>
                                 <select name="class" id="class" class="form-control">
@@ -28,31 +35,28 @@
                                     <option <?php if($row['class']=='2021-C'){?> selected="selected" <?php } ?> value="2021-C">2021-C</option>
                                 </select>
                             </div>
-                            <div class="form-group">
-                                <label for="gender">Gender:</label><br>
-                                <input type="radio" <?php if($row['gender']=='Male'){?> checked="checked" <?php } ?> name="sex" value="Male">Male <br>
-                                <input type="radio" <?php if($row['gender']=='Female'){?> checked="checked" <?php } ?> name="sex" value="Female">Female
-                            </div>
+
                             <div class="form-group">
                                 <label for="email">Email</label>
                                 <input type="text" name="email" id="email" value="<?php echo $row['email']; ?>" class="form-control">
                             </div>
+                            
                             <div class="form-group">
-                                <label for="reason">Reason:</label>
-                                <input type="text" name="reason" id="reason" value="<?php echo $row['reason']; ?>" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="class">Class:</label>
+                                <label for="class">Major:</label>
                                 <select name="major" id="major" class="form-control">
                                     <option <?php if($row['major'] == 'WEP'){?> selected="selected" <?php } ?>  value="WEP">WEP</option>
                                 </select>
                             </div>
-                    </div>
+
+                            <div class="form-group">
+                                <label for="reason">Reason:</label>
+                                <input type="text" name="reason" id="reason" value="<?php echo $row['reason']; ?>" class="form-control">
+                            </div>
+                    
+                        <a href="index2.php?action=view" class="btn btn-success">Go Back</a>
+                        <input type="submit" name="create" value="Submit" class="btn btn-primary float-right">
+                    
                 </form>
-                        <div class="card-footer">
-                            <a href="index2.php?action=view" class="btn btn-success">Go Back</a>
-                            <input type="submit" name="create" value="Submit" class="btn btn-primary float-right">
-                        </div>
                 <?php
                 }
                 ?>

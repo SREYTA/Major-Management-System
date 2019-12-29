@@ -7,7 +7,7 @@
       <div class="col-md-4"></div>
       <div class="col-md-4 mt-5">
         <div class="hovereffect">
-          <img class="img-responsive" src="View/img/<?php echo $row['profile']; ?>" class="rounded-circle mb-5" width="200" height="250" alt="Profile">
+          <img class="img-responsive" src="views/img/<?php echo $row['profile']; ?>" class="rounded-circle mb-5" width="200" height="250" alt="Profile">
           <div class="overlay">
             <h2>
               <a href="index1.php?action=update_profile&id=<?php echo $row['id']; ?>" class="btn btn-outline-danger font-weight-bold font-size-italic">Change Profile</a>

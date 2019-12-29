@@ -62,7 +62,7 @@
         $id = $_GET['id'];
         $filename = $_FILES['profile']['name'];
         $fileLocation = $_FILES['profile']['tmp_name'];
-        move_uploaded_file($fileLocation, "View/img/".$filename);
+        move_uploaded_file($fileLocation, "views/img/".$filename);
     
         $query = "UPDATE tbl_sna SET profile = '$filename' WHERE id='$id'";
     
