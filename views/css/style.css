@@ -11,9 +11,9 @@ body{
 }
 #navbar-top{
     width: 100%;
-    height: 50px;
+    height: 60px;
     position: fixed;
-    background-color: #438eb9;
+    background-color: #f68e09;
 }
 .handle{
     display: none;
@@ -21,9 +21,9 @@ body{
 #navbar-side{
     width: 189px;
     height: 100%;
-    margin-top: 50px;
+    margin-top: 60px;
     position: fixed;
-    background-color: #438eb9;
+    background-color:#f68e09;
     border-right: 0.5px solid rgb(190, 187, 187);
 }
 #navbar-side ul{

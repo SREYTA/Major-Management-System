@@ -49,6 +49,6 @@
       }
       ?>
       </table>
-      <a class="btn btn-success pull-left mb-5" href="index2.php?action=view">Go Back</a><br>
+      <a class="btn btn-success pull-left mb-5" href="index2.php?action=view_web">Go Back</a><br>
   </div>
 </div>

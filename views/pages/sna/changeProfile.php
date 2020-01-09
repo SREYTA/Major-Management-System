@@ -17,7 +17,7 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <a href="index1.php?action=view" class="btn btn-outline-success">Go Back</a>
+                            <a href="index1.php?action=view_sna" class="btn btn-outline-success">Go Back</a>
                             <input type="submit" name="create" value="Submit" class="btn btn-outline-primary float-right">
                         </div>
                     </form>

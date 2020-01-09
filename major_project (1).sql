@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 25, 2019 at 05:31 AM
+-- Generation Time: Jan 09, 2020 at 01:42 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -21,6 +21,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `major_project`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `login`
+--
+
+CREATE TABLE `login` (
+  `id` int(11) NOT NULL,
+  `username` varchar(200) DEFAULT NULL,
+  `passwords` varchar(200) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `login`
+--
+
+INSERT INTO `login` (`id`, `username`, `passwords`) VALUES
+(1, 'admin', 'password'),
+(2, 'mvc', 'password');
 
 -- --------------------------------------------------------
 
@@ -45,8 +65,9 @@ CREATE TABLE `tbl_sna` (
 --
 
 INSERT INTO `tbl_sna` (`id`, `first_name`, `last_name`, `gender`, `class`, `email`, `major`, `reason`, `profile`) VALUES
-(3, 'borith', 'moek', 'Male', '2021-A', 'moekborith@gmail.com', 'sna', 'LOVE SNA', 'major logo.png'),
-(4, 'borith', 'moek', 'Male', '2021-B', 'moekborith@gmail.com', 'SNA', 'I LOVE SNA            ', '');
+(4, 'borith', 'moek', 'Male', '2021-B', 'moekborith@gmail.com', 'SNA', 'I LOVE SNA            ', 'pic.jpg'),
+(7, 'dalin', 'hoem', 'Female', '2021-A', 'hoemdalin@gmail.com', 'SNA', 'SNA', 'pic.jpg'),
+(8, 'Mickey', 'Mouse', 'Female', '2021-A', 'raiya.sous@student.passerellesnumeriques.org', 'SNA', 'love', 'pic.jpg');
 
 -- --------------------------------------------------------
 
@@ -71,11 +92,17 @@ CREATE TABLE `tbl_web` (
 --
 
 INSERT INTO `tbl_web` (`id`, `first_name`, `last_name`, `gender`, `class`, `email`, `major`, `reason`, `profile`) VALUES
-(2, 'borith', 'moek', 'Male', '2021-B', 'moekborith@gmail.com', 'WEP', 'I LOVE WEP             ', '');
+(6, 'dalin', 'hoem', 'Female', '2021-A', 'dalin.hoem@student.passerellesnumeriques.org', 'WEP', 'I like create new and think a lot', 'pic.jpg');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `login`
+--
+ALTER TABLE `login`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `tbl_sna`
@@ -94,16 +121,22 @@ ALTER TABLE `tbl_web`
 --
 
 --
+-- AUTO_INCREMENT for table `login`
+--
+ALTER TABLE `login`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `tbl_sna`
 --
 ALTER TABLE `tbl_sna`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `tbl_web`
 --
 ALTER TABLE `tbl_web`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,6 +1,6 @@
 <div id="navbar-top">
     <img src="https://lh3.googleusercontent.com/-cXa1MHlPBUo/Xf9WDfsLPHI/AAAAAAAAAnE/mUON6W85gwIFLkjxejuWvuIZviAqfzIBwCK8BGAsYHg/s300/logo-major.jpg" class="img-fluid" alt="" style="width: 188px; height:61px;">
-    <a href="index.php?action=home"><i class="fa fa-user text-light meun-text" style="margin-left:83%"></i></b></a>
+    <a href="index.php?action=view"><i class="fa fa-door-open text-dark " style="margin-left:95%"></i></b></a>
 </div>
 <div class="handle"></div>
 <div id="wrapper">
@@ -8,11 +8,11 @@
         <ul>
             <li><a href="index.php?action=home"><i class="fa fa-home text-light"></i><span class="menu-text">Home</span></a></li>
             <li>
-                <a href="index.php?action=major"><i class="fa fa-file fa-caret-square-o-down"></i><span class="menu-text">Major</span><b class="fa fa-angle-left"></b></a>
-                <!-- <ul>
-                    <li><a href="#"><i class="fa fa-code text-light"></i><span class="menu-text">WEB</span></a></li>
-                    <li><a href="#"><i class="fa fa-desktop-network text-light"></i><span class="menu-text">SNA</span></a></li>
-                </ul> -->
+                <a href=""><i class="fa fa-file fa-caret-square-o-down"></i><span class="menu-text">Major</span><b class="fa fa-angle-left"></b></a>
+                <ul>
+                    <li><a href="index2.php?action=view_web"><i class="fa fa-code text-light"></i><span class="menu-text">WEB</span></a></li>
+                    <li><a href="index1.php?action=view_sna"><i class="fa fa-window-restore text-light"></i><span class="menu-text">SNA</span></a></li>
+                </ul>
             </li>
         </ul>
     </div>

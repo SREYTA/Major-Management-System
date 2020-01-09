@@ -53,7 +53,7 @@
                                 <input type="text" name="reason" id="reason" value="<?php echo $row['reason']; ?>" class="form-control">
                             </div>
                     
-                        <a href="index1.php?action=view" class="btn btn-success">Go Back</a>
+                        <a href="index1.php?action=view_sna" class="btn btn-success">Go Back</a>
                         <input type="submit" name="create" value="Submit" class="btn btn-primary float-right">
                     
                 </form>

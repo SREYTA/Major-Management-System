@@ -1,6 +1,6 @@
 <div id="navbar-top">
     <img src="https://lh3.googleusercontent.com/-cXa1MHlPBUo/Xf9WDfsLPHI/AAAAAAAAAnE/mUON6W85gwIFLkjxejuWvuIZviAqfzIBwCK8BGAsYHg/s300/logo-major.jpg" class="img-fluid" alt="" style="width: 188px; height:61px;">
-    <a href="index.php?action=home"><i class="fa fa-user text-light meun-text" style="margin-left:83%"></i></b></a>
+    <a href="index.php?action=view"><i class="fa fa-door-open text-dark meun-text" style="margin-left:95%;margin-bottom:30%"></i></b></a>
 </div>
 <div class="handle"></div>
 <div id="wrapper">
@@ -8,11 +8,11 @@
         <ul>
             <li><a href="index.php?action=home"><i class="fa fa-home text-light"></i><span class="menu-text">Home</span></a></li>
             <li>
-                <a href="index.php?action=major"><i class="fa fa-file fa-caret-square-o-down"></i><span class="menu-text">Major</span><b class="fa fa-angle-left"></b></a>
-                <!-- <ul>
-                    <li><a href="#"><i class="fa fa-code text-light"></i><span class="menu-text">WEB</span></a></li>
-                    <li><a href="#"><i class="fa fa-desktop-network text-light"></i><span class="menu-text">SNA</span></a></li>
-                </ul> -->
+                <a href="#"><i class="fa fa-file fa-caret-square-o-down"></i><span class="menu-text">Major</span><b class="fa fa-angle-left"></b></a>
+                <ul>
+                    <li><a href="index2.php?action=view_web"><i class="fa fa-code text-light"></i><span class="menu-text">WEB</span></a></li>
+                    <li><a href="index1.php?action=view_sna"><i class="fa fa-window-restore text-light"></i><span class="menu-text">SNA</span></a></li>
+                </ul>
             </li>
         </ul>
     </div>
@@ -23,7 +23,6 @@
         <div class="col-md-2"></div>
         <div class="col-md-10" style="margin-top: 100px">
             <a href="#" class="btn btn-success" data-toggle="modal" data-target="#myModal">Add New</a>
-            <!-- index.php?action=add -->
             <!-- The Modal of Add-->
             <div class="modal" id="myModal">
                 <div class="modal-dialog">
@@ -38,15 +37,15 @@
                             <div class="modal-body"  style="background-color: #C0C0C0;">
                                 <div class="form-group">
                                     <label for="name"><strong>Firstname</strong></label>
-                                    <input type="text" name="firstname" id="firstname" class="form-control">
+                                    <input type="text" name="firstname" id="firstname" class="form-control" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="name"><strong>Lastname</strong></label>
-                                    <input type="text" name="lastname" id="lastname" class="form-control">
+                                    <input type="text" name="lastname" id="lastname" class="form-control" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="class">Class:</label>
-                                    <select name="class" id="class" class="form-control">
+                                    <select name="class" id="class" class="form-control" required>
                                         <option value="">Choose Class</option>
                                         <option value="2021-A">2021-A</option>
                                         <option value="2021-B">2021-B</option>
@@ -60,15 +59,15 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="email"><strong>Email</strong></label>
-                                    <input type="text" name="email" id="email" class="form-control">
+                                    <input type="text" name="email" id="email" class="form-control" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email"><strong>Reason</strong></label>
-                                    <textarea name="reason" id="reason" cols="10" rows="5" class="form-control"></textarea>  
+                                    <textarea name="reason" id="reason" cols="10" rows="5" class="form-control" required></textarea>  
                                 </div>
                                 <div class="form-group">
                                     <label for="class">Major:</label>
-                                    <select name="major" id="major" class="form-control">
+                                    <select name="major" id="major" class="form-control" required>
                                         <option value="SNA">SNA</option>
                                     </select>
                                 </div>
@@ -79,7 +78,7 @@
                             </div>
                             <!-- Modal footer -->
                             <div class="modal-footer">
-                                <a href="index1.php?action=view" class="btn btn-outline-danger" style="margin-right: 302px;">Go Back</a>
+                                <a href="index1.php?action=view_sna" class="btn btn-outline-danger" style="margin-right: 302px;">Go Back</a>
                                 <input type="submit" name="create" value="Submit" class="btn btn-outline-primary float-right">
                             </div>
                         </form>
